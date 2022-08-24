@@ -117,7 +117,7 @@ passwd anonymous
 usermod -aG wheel anonymous
 git clone https://github.com/dunkelbuntes/arch_install /home/anonymous/.config/arch_install
 cp -r /home/anonymous/.config/arch_install/* /home/anonymous/.config
-chmod -R 777 /home/anonymous/.config
+chmod -R 775 /home/anonymous/.config
 rm -rf /home/anonymous/.config/arch_install
 EOF
 chmod +x /mnt/install.sh
